@@ -1,0 +1,65 @@
+/* Inspired by https://scriptscodes.com/slyka85/-dailycssimages-ruler-pure-css-MJJJQY */
+body {
+  background: #222;
+}
+
+.ruler-wrapper {
+  position: relative;
+  margin: 50px auto;
+  width: 510px;
+  height: 85px;
+  background: #F0E68C;
+  background-image: -webkit-linear-gradient(right, #2f2e30 2px, transparent 2px);
+  background-image: linear-gradient(to left, #2f2e30 2px, transparent 2px);
+  background-repeat: repeat-x;
+  background-size: 5px 15px;
+  box-shadow: 5px 5px 5px 2px #211f1f;
+}
+
+.ruler-wrapper:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+  height: 50%;
+  top: 24px;
+  left: 0;
+  background-image: -webkit-linear-gradient(right, #2f2e30 2px, transparent 2px);
+  background-image: linear-gradient(to left, #2f2e30 2px, transparent 2px);
+  background-repeat: repeat-x;
+  background-size: 50px 15px;
+}
+
+.ruler-wrapper:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+  height: 50%;
+  top: 12px;
+  left: 0;
+  background-image: -webkit-linear-gradient(right, #2f2e30 2px, transparent 2px);
+  background-image: linear-gradient(to left, #2f2e30 2px, transparent 2px);
+  background-repeat: repeat-x;
+  background-size: 25px 12px;
+}
+
+.numbers {
+  position: absolute;
+  top: 40px;
+  left: 45px;
+  word-spacing: 34px;
+  font-size: 16px;
+  color: #2f2e30;
+}
+
+.numbers:before {
+  content:"";
+  position: absolute;
+  left: -38px;
+  width: 18px;
+  height: 18px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px 1px #4a2d04;
+}
